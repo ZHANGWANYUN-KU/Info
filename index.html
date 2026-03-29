@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - 个人站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 90%;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+        }
+        h1 {
+            font-size: 32px;
+            color: #1a202c;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+        .bio {
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .projects {
+            text-align: left;
+            margin: 40px 0;
+            padding-top: 40px;
+            border-top: 1px solid #edf2f7;
+        }
+        .projects h2 {
+            font-size: 20px;
+            color: #1a202c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .project-item {
+            background: #f7fafc;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        .project-item:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+        }
+        .project-title {
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+        .project-desc {
+            font-size: 14px;
+            color: #718096;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .skill-tag {
+            background: #edf2f7;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">👨‍💻</div>
+        <h1>Information</h1>
+        <p class="subtitle">个人技术站点</p>
+        
+        <p class="bio">
+            欢迎访问我的个人站点。这里汇集了我的项目、技能和想法。
+            <br><br>
+            不断学习、不断进步，用技术解决问题。
+        </p>
+        
+        <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Web Design</span>
+            <span class="skill-tag">GitHub</span>
+        </div>
+        
+        <div class="projects">
+            <h2>📋 主要项目</h2>
+            <div class="project-item">
+                <div class="project-title">🏥 Surgery Scheduler Pro</div>
+                <div class="project-desc">医学手术排程系统（豪华版）- 支持多视图、高级筛选、数据分析等功能</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">🧠 MyNeuronLab</div>
+                <div class="project-desc">神经科学实验室 - 神经网络和机器学习相关研究项目</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">🔧 More Projects</div>
+                <div class="project-desc">更多项目正在开发中，敬请期待...</div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/ZHANGWANYUN-KU" class="link-btn">GitHub 主页</a>
+            <a href="https://github.com/ZHANGWANYUN-KU/ttk--surgery" class="link-btn">Surgery Scheduler</a>
+            <a href="https://github.com/ZHANGWANYUN-KU/MyNeuronLab" class="link-btn">MyNeuronLab</a>
+        </div>
+        
+        <p style="color: #a0aec0; font-size: 13px; margin-top: 40px;">
+            © 2026 ZHANGWANYUN-KU. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
